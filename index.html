@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Federica's quizz app on japanese animes and mangas</title>
+    <meta name="description" content="Test your knowledge of old Japanese animes">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">   
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-4">   
+          <img class="logo" src="tomaroundcopy.jpg" alt="an icon of Toma, from Guru Guru Magic Circle."/> 
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/10</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>How nerd are you? Let's check it out!</h1>
+        <button type="button" class="startButton">Let's go!</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

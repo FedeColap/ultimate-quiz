@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cantarell', sans-serif;
+}
+body {
+    font-family: 'Metrophobic', sans-serif;
+    background-color: #ffffff;
+    background: url('bunniesWallcopycopy.jpg') fixed;
+    color: #363946;
+}
+/*header styling*/
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    color: rgb(220, 20, 60);
+    font-size: 20px;
+}
+/* Clearfix */
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+.col-4,
+.col-8 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+    width: 50%;
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+}
+.dark {
+    width: 50px; 
+    border-radius: 40px;
+}
+.sakura {
+    width: 50px;
+}
+/*for computer screen*/
+
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(220, 20, 60);
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px
+}
+button:hover, button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+fieldset {
+    border: none;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(135, 12, 37);
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(220, 20, 60);
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px;
+    border-radius: 5px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    background-color: rgb(220, 20, 60);
+    color: rgb(213, 213, 213);
+    padding: 20px;
+    text-transform: uppercase
+}
+h3 {
+    color: #AF6438;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input[type=radio] {
+    margin-right: 10px;
+}
+label:nth-child(1) {
+    background-color: rgb(128, 0, 128);
+}
+label:nth-child(2) {
+    background-color: rgb(96, 0, 96);
+}
+label:nth-child(3) {
+    background-color: rgb(88, 0, 126);
+}
+label:nth-child(4) {
+    background-color: rgb(60, 19, 98);
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color: #AF6438
+}
+main div {
+    margin: 0 auto;
+}
+.answer {
+    flex: 1 1 auto;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(249, 249, 245) 0%, rgba(244, 239, 101, 0.988) 100%);
+    padding-top: 40px
+}
+.correctFeedback button {
+    width: 100%;
+    background-color: rgb(220, 20, 60);
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.correctFeedback span {
+    color: rgb(25, 120, 212);
+}
+.correctFeedback img {
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.results img {
+    width: 500px;
+    border-radius: 5px; 
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(25, 120, 212);
+    
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: rgb(25, 120, 212);
+    
+}
+.restartButton {
+    margin-top: 40px
+}
+
+/*for tablets*/
+@media screen and (max-width: 1400px) {
+    header ul li {
+        font-size: 20px;
+        
+    }
+    h1{
+        background-color: rgb(220, 20, 60);
+    }
+    .correctFeedback img {
+        width: 350px;
+        padding: 5px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+    .sakura, .dark {
+        display: none;
+    }
+    
+}
+
+/*for the phones*/
+@media screen and (max-width: 510px) {
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+    h1 {
+        font-size: 1.5em; 
+        background-color: rgb(220, 20, 60);
+    }
+    h2 {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+    .col-4,
+    .col-8 {
+        width: 100%
+    }
+    .correctFeedback img {
+        width: 200px;
+        border-radius: 5px;
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }  
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    .sakura, .dark {
+        display: none;
+    }
+}
