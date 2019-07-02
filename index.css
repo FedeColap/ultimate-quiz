@@ -35,11 +35,12 @@ header ul li {
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
-    display: inline;
+    
 }
 header ul {
     text-align: right;
-    margin-top: 50px
+    margin-top: 50px;
+    display: inline;
 }
 .col-4,
 .col-8 {
