@@ -5,28 +5,28 @@ let score = 0;
 function generateQuestion () {
   if (questionNumber < STORE.length) {
     return `<div class="question-${questionNumber}">
-    <h2>${STORE[questionNumber].question}</h2>
-    <form>
-    <fieldset>
-    <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
-    <span>${STORE[questionNumber].answers[0]}</span>
-    </label>
-    <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
-    <span>${STORE[questionNumber].answers[1]}</span>
-    </label>
-    <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
-    <span>${STORE[questionNumber].answers[2]}</span>
-    </label>
-    <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
-    <span>${STORE[questionNumber].answers[3]}</span>
-    </label>
-    <button type="submit" class="submitButton">Submit</button>
-    </fieldset>
-    </form>
+      <h2>${STORE[questionNumber].question}</h2>
+      <form>
+      <fieldset>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+      <span>${STORE[questionNumber].answers[0]}</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
+      <span>${STORE[questionNumber].answers[1]}</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
+      <span>${STORE[questionNumber].answers[2]}</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
+      <span>${STORE[questionNumber].answers[3]}</span>
+      </label>
+      <button type="submit" class="submitButton">Submit</button>
+      </fieldset>
+      </form>
     </div>`;
 } else {
     renderResults();
@@ -99,7 +99,7 @@ function userAnswerFeedbackCorrect () {
 }
 
 function addPinkyBadge () {
-    $('.col-4').append('<img src="successicon.png" alt="that is a success icon" class="sakura"/>');
+    $('.col-4').append('<img src="successIcon.png" alt="that is a success icon" class="sakura"/>');
 }
 
 //user feedback for wrong answer
@@ -121,7 +121,7 @@ function updateScore () {
 
 //when quiz is over this is the html for the page
 function renderResults () { 
-    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You made it through the end!</h3><img src="endingimage.jpg" alt="Nike and Kokoki to the next adventure"/><p>You got ${score} / 10</p><p>Success or failure, is not easy to be a nerd.</p><button class="restartButton">Start again :)</button></div>`);
+    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You made it through the end!</h3><img src="endingImage.jpg" alt="Nike and Kokoki to the next adventure"/><p>You got ${score} / 10</p><p>Success or failure, is not easy to be a nerd.</p><button class="restartButton">Start again :)</button></div>`);
 }
 
 //what happens when the user clicks next
